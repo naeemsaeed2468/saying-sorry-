@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message</title>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #ffe4e1; font-family: sans-serif; cursor: pointer; }
+        .box { width: 200px; height: 200px; background-color: #ff6b6b; border: 5px solid #fff; border-radius: 10px; position: relative; display: flex; justify-content: center; align-items: center; transition: 0.5s; }
+        .bear { position: absolute; bottom: 50px; width: 120px; height: 120px; background-color: #8d6e63; border-radius: 50%; transition: transform 1s; z-index: 1; display: flex; justify-content: center; align-items: center; }
+        .box.open .bear { transform: translateY(-150px); }
+        .text { position: absolute; top: 50px; font-weight: bold; color: #ff0000; text-align: center; }
+    </style>
+</head>
+<body onclick="document.querySelector('.box').classList.toggle('open')">
+    <div class="box">
+        <div class="bear">SORRY</div>
+    </div>
+    <div class="text">Click the box!</div>
+</body>
+</html>
